@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <script src="./components/header.js" type="text/javascript" defer></script>
+        <script src="https://kit.fontawesome.com/166b9e2f1d.js" crossorigin="anonymous"></script>
+    </head>
+
+<style>
+.charcard{
+  width:100%;
+  float: right;
+  border-collapse: collapse;
+  border: 1px solid;
+  border-color: #3c2a6b;
+  table-layout: fixed;
+}
+
+.tab-header {
+  font-family: Verdana,sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  vertical-align: top;
+  background-color: #3c2a6b; 
+  color:white;
+}
+
+.tab-subheader {
+  font-family: Verdana,sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  vertical-align: top;
+  background-color: #5d41a6; 
+  color:white; 
+}
+</style>
+
+<title>Borderliners</title>
+<header-component></header-component>
+
+<div class="middlecolumn">
+    <h2>Borderliners</h2>
+    <hr>
+    <div class="quote" style="float: center;">
+        <i class="fa-solid fa-quote-left fa-xl"></i>
+        <p><em>They live at the frontier of the struggle between awareness and everyday existence. </em></p>
+        <i class="fa-solid fa-quote-right fa-xl" style="margin-left: 90%"></i>
+        <p style="text-align: right">- City of Mist Player's Guide, p29</p>
+      </div>  
+    <p>Every Borderliner harbors a secret wish to let their Mythos consume them but is deterred by the personal sacrifices that must be made. At the same time, Borderliners wish to forget 
+        about their Mythos in favor of their mundane existence, their loved ones, their jobs, their problems, and their hobbies. There are those who actively maintain both aspects of their 
+        lives and walk the line for a long time, though this can become more and more exhausting with every sacrifice.
+    </p>
+
+    <button type="button" class="npc-collapsible" onclick=onClick(this)>Lenny O'Connor</button>
+    <div class="npc-content">
+            <div class="row">
+                <div class="npc-left">
+                    <img class="npc-img" src="images/oncler.png">
+                </div>
+                <div class="npc-right">
+                  <h4>Mythos: Leprachaun</h4>
+                  <p>Lenny O'Connor is a crafy man who sports a green suit and top hat. For more information, see <a href="lenny.html">Lenny O'Connor</a></p>
+                </div>
+            </div>
+    </div>
+
+    <button type="button" class="npc-collapsible">Lisa</button>
+    <div class="npc-content">
+      <div class="row">
+        <div class="npc-left">
+          <img class="npc-img" src="images/lisa_img.jpg">
+        </div>
+        <div class="npc-right">
+           <h4>Mythos: Library of Alexandria</h4>
+           <p>Lisa is the mysterious librarian of the local library. She is soft-spoken and always willing to help out visitors. Lisa prefers to stay inside the library as opposed to going 
+            outside. She is very knowledgeable about history and languages, showing fluency in Latin and other archaic languages. She is attuned to the demonic entity that takes the form of 
+            the library, so she can trap manipulate minds and trap people inside books. However, because of her kind-heartedness and genuine concern for humans, she chooses not to do so, 
+            unless she is under the library's full influence.</p>       
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="npc-collapsible">Phillip Stentley</button>
+    <div class="npc-content">
+      <div class="row">
+        <div class="npc-left">
+          <img class="npc-img" src="images/phillip_img.jpg">
+        </div>
+        <div class="npc-right">
+          <h4>Mythos: Orpheus</h4>
+          <p>The self-proclaimed CE-Bro of the modeling agency, Seven Strings Studios. As a lover and collector of guitars, he originally wanted to name it Six Strings Studios, but that 
+            name was already taken by a guitar shop, so he had to settle for Seven Strings. He loves his wife and playing music, as he is proficient at singing, guitar, and the harmonica. He can manipulate
+            people at a weak level with his music, but his main ability is to bring a soul back from the dead. This power does have its limits, since he needs a host for the soul, and the ritual
+            will kill the host if it doesn't work. The more the dead soul likes the song he's playing, the higher the chance of success of the ritual.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="npc-collapsible" id="Sam-Fujiwara">Sam Fujiwara</button>
+    <div class="npc-content">
+      <div class="row">
+        <div class="npc-left">
+          <img class="npc-img" src="images/sam_main.png">
+        </div>
+        <div class="npc-right">
+          <h4>Mythos: Susanoo</h4>
+          <p>Sam is a high energy high schooler who is also Amy's younger brother. He is a large part of the reason why Amy often works at coffee shops or libraries instead of at home, since he 
+            likes to cause disturbances. He is also often down on his luck when it comes to his love life. He is willing to go beyond his comfort zone, like going to a party, wearing clothes 
+            he doesn't like, or reading books outside of his preferred genre, if it means grabbing the attention of his crush Sophia. Unfortunately, Sophia is not impressed by his antics and he has 
+            a long way to go. Don't stop believing, you'll get 'em one day, Sam!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="npc-collapsible">Vector</button>
+    <div class="npc-content">
+      <div class="row">
+        <div class="npc-left">
+          <img class="npc-img" src="images/vector_img.jpg">
+        </div>
+        <div class="npc-right">
+          <h4>Mythos: Virus</h4>
+          <p>Vector, whose real name is Victoria, is a high schooler who was part of an experiment conducted by Helix Labs. She obtained the powers of a viral infection, allowing her to mind 
+            control people she comes in contact with, and the infected can spread the control. She is a fan of goth and alternative fashion, and those she infects adopt the same fashion sense. 
+            She is also a fan of the band the goth rock band Löded Diper.</p>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="npc-collapsible" onclick=onClick(this)>Warden Simon</button>
+    <div class="npc-content">
+            <div class="row">
+                <div class="npc-left">
+                    <img class="npc-img" src="images/simon_main2.png">
+                </div>
+                <div class="npc-right">
+                  <h4>Mythos: King Minos</h4>
+                  <p>Simon is the warden at Mistapolis Penitentiary. He is motivated by trying to contain his son Ryan, whom he deems a monster due to his affliction of the Minotaur mythos. 
+                    He commissioned the architect, <a href="legendaries.html">Dallas</a> to design a prison that the "monster" cannot break out of. Simon does not see any issue with locking up 
+                    a child for years, without any form of human interaction, entertainment, or even proper meals, as he was happy to feed problematic prisoners to Ryan as sustenance. He also 
+                    sees containment as a temporary solution, as he encouraged Samuel to kill a weakened Ryan because it would make his life easier.
+                  </p>
+                </div>
+            </div>
+    </div>
+</div>
+
+</html>
+
+<script>
+    var coll = document.getElementsByClassName("npc-collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("npc-active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+</script>

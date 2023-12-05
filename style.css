@@ -1,0 +1,238 @@
+
+.middlecolumn{
+  background-color: #f1f1f1;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2%;
+  width: 75%;
+  
+}
+
+.leftcolumn{
+  background-color: #e6e7eb;
+  margin-left: 10%;
+  padding: 2%;
+  float: left;
+  width: 55%
+}
+  
+.rightcolumn{
+  background-color: #e6e7eb;
+  margin-right: 10%;
+  padding: 1%;
+  float: right;
+  width: 21%
+  }
+
+/*
+img{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+*/
+
+/*
+.charcard{
+  width:100%;
+  float: right;
+  border-collapse: collapse;
+  border: 1px solid;
+  border-color: #3c2a6b;
+  table-layout: fixed;
+}
+
+.tab-header {
+  font-family: Verdana,sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  vertical-align: top;
+  background-color: #3c2a6b; 
+  color:white;
+}
+
+.tab-subheader {
+  font-family: Verdana,sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  vertical-align: top;
+  background-color: #5d41a6; 
+  color:white; 
+}
+*/
+
+hr{
+  width: 95%;
+  border-color:#6354a1;
+  margin: 0;
+}
+
+td{
+  font-family: Verdana,sans-serif;
+  background-color: #f1f1f1;
+  vertical-align: top;
+  padding: 5px;
+  background-color: #e6e7eb;
+}
+
+.wrap {
+  float: right;
+  margin: 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.txtbox {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #b5b5b5;
+  float: center;
+  width: 100%;
+  padding: 5px;
+}
+
+p, td, li {
+  font-family: Verdana,sans-serif;
+}
+
+/* link template */
+a:link {
+  text-decoration: none;
+  color: #3c2a6b;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #3c2a6b;
+}
+
+/* main content template */
+body {
+  font-family: Verdana,sans-serif;
+  background-attachment: fixed;
+  background-color:#3c2a6b;
+  width: 100%;
+}
+
+/* quote card */
+.quote {
+  width: 60%;
+  color: #3c2a6b;
+  background-color: #bcbac2;
+  border-radius: 25px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin: 5%
+
+}
+
+/* Gallery Styles */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.grid-img {
+  position: relative;
+  min-width: 25%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* npc card */
+.npc-card{
+  display: flex;
+  justify-content: left;
+}
+
+.npc-img{
+  position: relative;
+  padding: 2%;
+  width: 98%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.npc-text{
+  font-family:Verdana, Tahoma, sans-serif;
+  padding-left: 20px;
+  padding-top: 20%;
+  float: left;
+}
+
+.npc-left{
+  padding: 1%;
+  width: 25%;
+  float: left;
+}
+
+.npc-right{
+  padding: 1%;
+  width: 75%;
+  float: right;
+}
+
+
+.npc-collapsible {
+  background-color: #e6e6e6;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.npc-active, .npc-collapsible:hover {
+  background-color: #ccc;
+}
+
+  /* Style the collapsible content. Note: hidden by default */
+.npc-content {
+  padding: 0 1%;
+  background-color: white;
+  max-height: 0;
+  margin-bottom: 2%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.npc-collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.npc-active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* responsiveness */
+@media screen and (max-width: 800px) {
+  .rightcolumn, .leftcolumn, .middlecolumn, .quote {
+    margin-left: 1%;
+    margin-right: 1%;   
+    width: 98%;
+    padding: 2%;
+  }
+
+  .npc-collapsible, .npc-img, .npc-card, .npc-left, .npc-right {
+    margin-left: 1%;
+    margin-right: 1%;   
+    width: 98%;
+    padding: 2%;
+  }
+
+}

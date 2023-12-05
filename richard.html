@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="./components/header.js" type="text/javascript" defer></script>        
+        <script src="https://kit.fontawesome.com/166b9e2f1d.js" crossorigin="anonymous"></script>
+
+      </head>
+    <div>
+        <title>Richard Grafton</title>
+    </div>
+<style>
+.charcard{
+  width:100%;
+  float: right;
+  border-collapse: collapse;
+  border: 1px solid;
+  border-color: #3b261a;
+  table-layout: fixed;
+}
+
+.tab-header {
+  font-family: Verdana,sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  vertical-align: top;
+  background-color: #593d2e; 
+  color:white;
+}
+
+.tab-subheader {
+  font-family: Verdana,sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  vertical-align: top;
+  background-color: #3b261a; 
+  color:white; 
+}
+</style>
+    </html>
+    <header-component></header-component>
+      
+    <div class="row">
+      <div class="rightcolumn">
+        <table class="charcard">
+            <th class="tab-header">Richard Grafton</th>
+            <tr>
+                <th class="tab-subheader">Mythos: Thoth</th>
+            </tr>
+            <tr>
+                <td><img style="padding:0" src="./images/richard_main.jpeg" onclick="onClick(this)"></td>
+            </tr>
+        </table>
+        <table class="charcard">
+            <!--Portrayed by-->
+            <tr>
+                <td style="width: 40%"><strong>Portrayed by</strong></td>
+                <td>Noah (OrionTaurus)</td>
+            </tr>
+            <!--Occupation-->
+            <tr>
+                <td style="width: 40%"><strong>Occupation</strong></td>
+                <td>History Professor</td>
+            </tr>
+            <!--Birthday-->
+            <tr>
+                <td style="width: 40%"><strong>Born</strong></td>
+                <td>Unknown (Age: 60s)</td>
+            </tr>
+            <!--Family-->
+            <tr>
+                <td style="width: 40%"><strong>Family</strong></td>
+                <td><ul>
+                    <li>Unnamed ex-wife (divorced)</li>
+                </ul></td>
+            </tr>
+            <!--Relationships-->
+            <tr>
+                <td style="width: 40%"><strong>Relationships</strong></td>
+                <td><ul>
+                    <li>The Order</li>
+                </ul></td>
+            </tr>
+            <!--Likes-->
+            <tr>
+                <td style="width: 40%"><strong>Likes</strong></td>
+                <td><ul>
+                    <li>The number six</li>
+                    <li>Tweed jackets</li>
+                </ul></td>
+            </tr>
+            <!--Dislikes-->
+            <tr>
+                <td style="width: 40%"><strong>Dislikes</strong></td>
+                <td><ul>
+                    <li></li>
+                </ul></td>
+            </tr>
+        </table>
+      </div> 
+
+      <div class="leftcolumn">
+          <h2>Description</h2>
+          <hr>
+          <p>Richard is an eccentric older man with silver hair and glasses. Despite his elderly slouch, he still stands at above-average height. He usually wears a tweed jacket from his 
+            extensive collection, along with slacks and loafers. 
+          </p>
+          <br>
+
+          <h2>History</h2>
+          <hr>
+          <p>Richard is a veteran of an as yet unspecified war. He has been divorced for 10 years.</p>
+          <br>
+      
+          <h2>Personality</h2>
+          <hr>
+          <p>Underneath Dr. Richard's calm demeanor is a vigorous desire for knowledge. He is always searching for patterns in sets of six and pondering if it is all part of something bigger. 
+            After all, it can't be a coincidence that the Neighborhood Watch always embarks on their adventures in a group of six. Outside of his scholarly side, Dr. Richard is very mellow 
+            and non-confrontational, as he is able to defuse any situation with ease.</p>
+          <br>
+      
+          <h2>Relationships</h2>
+          <hr>
+          <h3>The Order</h3>
+          <p>The Order, a mysterious group obsessed with the supernatural machinations of the Mist and Rifts, has taken an interest in Richard. Sharing their desire for knowledge, Richard is 
+            happy to entertain their requests to investigate anomalies or retrieve special items.</p>
+          <br>
+      
+          <h2>Abilities</h2>
+          <hr>
+          <h3>Imp Conjuration</h3>
+          <p>Richard can summon demons, mainly imps, from portals to another world. These imps will faithfully do his bidding, unless his concentration falters and the imps are left to their 
+            own vices.</p>
+          <h3>Body Projection</h3>
+          <p>Richard can summon body parts that he controls remotely to serve as his eyes, ears, and even mouth. They appear as floating organs to Rifts, but are otherwise invisible to Sleepers.</p>
+          <h3>Aura Sight</h3>
+          <p>As the Rift of the God of Knowledge, Richard has a deeper connection to the truth of the City, and can see beyond the Mist's veil. He can identify Rifts, unless they are purposefully
+            hiding their identity, as well as detect if a Rift-related incident has occured in a certain spot recently.
+          </p>
+          <br>
+
+          <!-- quote -->
+          <div class="quote">
+            <i class="fa-solid fa-quote-left fa-xl"></i>
+            <p><em>Hm... How curious...</em></p>
+            <i class="fa-solid fa-quote-right fa-xl" style="margin-left: 90%"></i>
+            <p style="text-align: right">- Richard Grafton</p>
+          </div>          
+
+          <h2>Trivia</h2>
+          <hr>
+          <ul>
+            <li>Jazz is Richard's favorite and he frequently listens to it at home.</li>
+          </ul>
+          <br>  
+      
+          <h2>Gallery</h2>
+          <div class="row" id="images1">
+            <div class="w3-quarter">
+              <img class="grid-img" src="./images/richard_splash.PNG" alt="Richard opening a portal to another world to summon some imps (by rui)" onclick="onClick(this)">
+          </div>
+          <div class="w3-quarter">
+            <img class="grid-img" src="./images/richard_emote.jpg" onclick="onClick(this)">
+        </div>
+          </div>
+
+          <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="w3-button w3-black w3-display-topright">×</span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+              <img id="img01" class="w3-image">
+              <p id="caption"></p>
+            </div>
+          </div>
+      </div>
+
+
+      
+      
+      
+      
+      <!--img src="./images/amy_main.png"-->
+</html>
+
+<script>
+   function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+} 
+</script>      
+
+<!--img src="https://s3.amazonaws.com/misterysolvers.com/images/amy_main.png"-->

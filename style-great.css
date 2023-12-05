@@ -1,0 +1,157 @@
+body {
+  background-image: url("great-imgs/library-bg.jpg");
+}
+
+h1, h2, h3, h4 {
+  font-family:'Times New Roman', Times, serif;
+}
+
+.author-p {
+  font-family:Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+  color:#4f4f4f;
+}
+
+.book-img{
+    position: relative;
+    padding: 2%;
+    min-width: 98%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+.avatar {
+    border-radius: 50%;
+    max-width: 80%;
+    aspect-ratio: 1/1;
+}
+
+.review-left{
+    padding: 1%;
+    width: 15%;
+    float: left;
+}
+  
+.review-right{
+    padding: 1%;
+    width: 85%;
+    float: right;
+}
+
+.review-collapsible {
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.review-active, .review-collapsible:hover {
+  background-color: #ccc;
+}
+
+  /* Style the collapsible content. Note: hidden by default */
+.review-content {
+  padding: 0 1%;
+  background-color: white;
+  max-height: 0;
+  margin-bottom: 2%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.review-collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.review-active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.hr {
+  margin: 5% 0;
+  width: 98%;
+}
+
+input{
+    margin: 1% 0;
+    border-radius: 15px;
+    width: 50%;
+}
+
+.lock:hover .icon-unlock:before {
+content: "\f023";
+}  
+
+.popup:hover {
+    background-color: #000000; /* Green */
+    color: white;
+  }
+
+select{
+    border-radius: 15px;
+    border-width: 2px;
+    padding: 5px;
+}
+
+.popup {
+    background-color: #8c8c8c;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 400px;
+    height: 150px;
+    background-color: #4f4f4f;
+    opacity: 90%;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -400px;
+    font-family: Verdana, Tahoma, sans-serif;
+  }
+
+  .popup .show {
+    visibility: visible;
+    /*animation: fadeIn 1s */
+  }
+
+  /* Add animation (fade in the popup)
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  */
